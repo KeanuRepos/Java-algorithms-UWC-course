@@ -1,0 +1,106 @@
+/**
+ File name: Billing.java
+
+ Class for a billing record for an office visit by a patient
+ to see a doctor.  Contains the name of the doctor, the
+ name of the patient, and the doctor's fee for the office vist.
+
+ Author: Lew Rakocy
+ email address: LRakocy@devrycols.edu
+ Date: 9/4/2000
+ Changes: 03/15/2003 Made comments like text examples.
+*/
+public class Billing
+{
+    private String aDoctor;
+    private String aPatient;
+    private double billingAmount;
+
+    // Constructors: must have both a doctor and a patient.
+
+    public Billing(Doctor theDoctor, Patient thePatient)
+    {
+        aDoctor = theDoctor.getName();
+        aPatient = thePatient.getName();
+        billingAmount = theDoctor.getOfficeFee();
+    }
+
+    // Methods to display instance variable values.
+
+    // Write all values
+
+    public void writeOutput()
+    {
+        writeDoctorName();
+        writePatientName();
+        writeBillingAmount();
+    }
+
+    public void writeDoctorName()
+    {
+        System.out.println("Doctor: " + aDoctor);
+    }
+
+    public void writePatientName()
+    {
+        System.out.println("Patient: " + aPatient);
+    }
+
+    public void writeBillingAmount()
+    {
+        System.out.println("Billing Amount: $" + billingAmount);
+    }
+
+    // Methods to change values of instance variables
+
+    // Change all values
+
+    public void set (String newDoctorName,
+                     String newPatientName, double newBillingAmount)
+    {
+        setDoctor(newDoctorName);
+        setPatient(newPatientName);
+        setBillingAmount(newBillingAmount);
+    }
+
+    public void setDoctor(String newDoctor)
+    {
+        aDoctor = newDoctor;
+    }
+
+    public void setPatient(String newPatient)
+    {
+        aPatient = newPatient;
+    }
+
+    public void setBillingAmount(double newBillingAmount)
+    {
+        billingAmount = newBillingAmount;
+    }
+
+    // Methods to return values of instance variables.
+
+    public String getDoctor()
+    {
+        return aDoctor;
+    }
+
+    public String getPatient()
+    {
+        return aPatient;
+    }
+
+    public double getBillingAmount()
+    {
+        return billingAmount;
+    }
+
+    // Equals method
+
+    public boolean equals(Billing otherBilling)
+    {
+        return this.aDoctor.equalsIgnoreCase(otherBilling.getDoctor())
+            && this.aPatient.equalsIgnoreCase(otherBilling.getPatient())
+            && this.billingAmount == otherBilling.billingAmount;
+    }
+}
