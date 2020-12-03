@@ -1,0 +1,7 @@
+https://medium.com/@ssaurel/solving-the-knapsack-problem-in-java-c985c71a7e64
+
+https://www.guru99.com/knapsack-problem-dynamic-programming.html
+
+https://www.baeldung.com/java-knapsack
+
+https://stackoverflow.com/questions/40010111/the-knapsack-max-profit

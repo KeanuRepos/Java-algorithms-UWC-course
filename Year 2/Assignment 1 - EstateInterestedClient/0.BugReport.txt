@@ -1,0 +1,1 @@
+Name or Age item is duplicated in the textfile.
