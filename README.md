@@ -1,4 +1,2 @@
 # JavaPrograms
-This repo contains some of the java solutions and programs i've utilized, throughout my experience in java programming.
-I have mainly worked on java projects in University, and therefore created a year 1 and year 2 folder of my java code,
-which represents my first and second year, developing in java.
+This repo contains some of the java solutions and programs i have utilized, throughout my experience in java programming. Most of my basic java knowledge comes from University and therefore i decided to create two folders, i.e, year 1 and year 2, which represents my first and second year, of studying java in University. 
